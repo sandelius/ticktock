@@ -35,7 +35,7 @@ See the `demo.html` for examples.
 
 #### Options
     var tt = new TickTock('#timer', {
-    onStart: function(tt) {},
-    onStop:  function(tt) {},
-    onreset: function(tt) {}
-  });
+        onStart: function(tt) {},
+        onStop:  function(tt) {},
+        onreset: function(tt) {}
+    });
