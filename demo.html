@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demo</title>
+
+</head>
+<body>
+  <button class="timer" data-seconds="0">0:00:00</button>
+  <button class="start">Start</button>
+  <button class="stop">Stop</button>
+  <button class="reset">Reset</button>
+
+  <script type="text/javascript" src="src/ticktock.js"></script>
+  <script>
+    window.onload = function() {
+
+      var tt = new TickTock('.timer', {
+        onStop: function(tt) {
+          alert('Stopped at ' + tt.seconds + ' seconds.');
+        }
+      });
+
+      var start = document.getElementsByClassName('start')[0];
+          start.addEventListener('click', function() {
+            tt.start();
+          });
+
+      var stop = document.getElementsByClassName('stop')[0];
+          stop.addEventListener('click', function() {
+            tt.stop();
+          });
+
+      var reset = document.getElementsByClassName('reset')[0];
+          reset.addEventListener('click', function() {
+            tt.reset();
+          });
+
+    };
+  </script>
+
+</body>
+</html>
