@@ -1,0 +1,21 @@
+{
+  "name": "ticktock",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sandelius/ticktock",
+  "authors": [
+    "Tobias Sandelius <tobias@sandeli.us>"
+  ],
+  "description": "Simple Javascript timer",
+  "main": "src/ticktock.js",
+  "keywords": [
+    "timer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
